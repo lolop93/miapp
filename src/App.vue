@@ -20,11 +20,11 @@
       </div>
 
       <div class="col-lg-2 order-lg-3 order-2">
-        Aqui el Login
+        Aqui el Login :)
       </div>
 
     </div>
- 
+
 
   </div>
   <div class="container-fluid banner-cabecera">
