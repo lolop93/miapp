@@ -2,7 +2,6 @@
   <div class="home">
 
     <GridProductos/>
-    <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Prueba 1ª Proyecto Kbesa"/>
 
     <div class="container">
