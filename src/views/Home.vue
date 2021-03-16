@@ -1,5 +1,7 @@
 <template>
   <div class="home">
+
+    <GridProductos/>
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Prueba 1ª Proyecto Kbesa"/>
 
@@ -16,11 +18,14 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
+import GridProductos from '@/components/GridProductos.vue'
 
 export default {
   name: 'Home',
+  data: () => ({
+  }),
   components: {
-    HelloWorld
-  }
+    HelloWorld, GridProductos,
+  },
 }
 </script>
