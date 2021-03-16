@@ -16,13 +16,13 @@
           </aside>
         </div>
         <div class="col-md-10 contenido-main">
-          <h2>¿Qué encontraras en nuestras tiendas asociadas?</h2>
+          <h3>¿Qué encontraras en nuestras tiendas asociadas?</h3>
           <p>Entra en cada tienda y descubre los Chollos que se han seleccionado para ti. Accediendo a los establecimientos a través nuestra plataforma podrás encontrar los productos con precios de oferta y hacer tus compras inteligentes. Puedes suscribirte para estar al día de las noticias o productos que más te puedan interesar de las diferentes tiendas. Con ello conseguirás realizar compras a los mejores precios si estás al día de las noticias.</p>
-          <h2>Forma parte de nuestra plataforma.</h2>
+          <h3>Forma parte de nuestra plataforma.</h3>
           <p>Si eres usuario interesado en algún tema o producto en concreto, aprovecha nuestro sistema de Partners, así podrás rentabilizar tu afición siempre que compartas tu conocimiento con los demás usuarios a través de nuestra web. Cuantas más ventas se realicen de tus productos mayores serán las ventajas y beneficios de colaborar con nuestra comunidad de chollos.</p>
-          <h2>Benefíciate de nuestra plataforma:</h2>
+          <h3>Benefíciate de nuestra plataforma:</h3>
           <p>Una vez que comiences a usar nuestra plataforma podrás beneficiarte del conocimiento compartido de los usuarios de la web, y conseguir subscriptores que serán clientes potenciales de los productos que recomiendes. Este hecho jamás estará disponible en tiendas físicas, ya que estas ganan más cuanto más sea el precio de sus productos. Así que echa un vistazo a nuestras tiendas y compra sobre seguro. Descubre las ventajas de nuestra web y ahora tu tiempo y tu dinero. Además de poder pertenecer a nuestra comunidad.</p>
-          <h2>Selección de productos en tiendas.</h2>
+          <h3>Selección de productos en tiendas.</h3>
           <p>Puedes filtrar por tiendas, o categorías de productos. Con ello podrás informarte del producto o servicio que necesites, con lo que estarás informado de los precios de mercado de los diferentes productos y podrás realizar tu selección de chollos y comprar de forma inteligente. Aprovecha el conocimiento de la comunidad de Hyperchollo.com y pasa de compras en tiendas físicas, para acceder a los mejores precios en la plataforma de las compras inteligentes.</p>
 
           <h2>¿Qué encontraras en nuestras tiendas asociadas?</h2>
