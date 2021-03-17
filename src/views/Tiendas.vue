@@ -16,6 +16,7 @@
           </aside>
         </div>
         <div class="col-md-10 contenido-main">
+          <GridTienda/>
           <h3>¿Qué encontraras en nuestras tiendas asociadas?</h3>
           <p>Entra en cada tienda y descubre los Chollos que se han seleccionado para ti. Accediendo a los establecimientos a través nuestra plataforma podrás encontrar los productos con precios de oferta y hacer tus compras inteligentes. Puedes suscribirte para estar al día de las noticias o productos que más te puedan interesar de las diferentes tiendas. Con ello conseguirás realizar compras a los mejores precios si estás al día de las noticias.</p>
           <h3>Forma parte de nuestra plataforma.</h3>
@@ -49,6 +50,21 @@
 
   </div>
 </template>
+
+
+<script>
+// @ is an alias to /src
+import GridTienda from '@/components/GridTienda.vue'
+
+export default {
+  name: 'Tienda',
+  data: () => ({
+  }),
+  components: {
+    GridTienda
+  },
+}
+</script>
 
 <style lang="css" scoped>
 
