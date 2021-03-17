@@ -1,8 +1,35 @@
 <template lang="html">
   <div class="footer">
     <footer class="bg-light text-center text-lg-start">
-
+      <svg class="editorial"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           viewBox="0 24 150 28 "
+           preserveAspectRatio="none">
+       <defs>
+       <path id="gentle-wave"
+       d="M-160 44c30 0
+          58-18 88-18s
+          58 18 88 18
+          58-18 88-18
+          58 18 88 18
+          v44h-352z" />
+        </defs>
+        <g class="parallax1">
+         <use xlink:href="#gentle-wave" x="50" y="3" fill="#e65100"/>
+        </g>
+          <g class="parallax2">
+         <use xlink:href="#gentle-wave" x="50" y="0" fill="#ffb74d"/>
+          </g>
+            <g class="parallax3">
+         <use xlink:href="#gentle-wave" x="50" y="9" fill="#ff9800"/>
+         </g>
+          <g class="parallax4">
+         <use xlink:href="#gentle-wave" x="50" y="6" fill="rgb(97, 97, 97)"/>
+        </g>
+      </svg>
       <div class="container-fluid">
+
 
         <div class="row align-items-center" style="background-color: #616161; padding-top:10px; color:white; font-size: .8em">
 
@@ -73,6 +100,77 @@
   width: 75%;
   height: auto;
 }
+
+
+.editorial {
+  background: white;
+  display: block;
+  width: 100%;
+  height: 60px;
+  max-height: 60px;
+  z-index:5;
+  bottom:0;
+  left:0px;
+  float:left;
+}
+
+.parallax1 > use {
+  animation: move-forever1 12s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+.parallax2 > use {
+  animation: move-forever2 10s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+.parallax3 > use {
+  animation: move-forever3 8s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+.parallax4 > use {
+  animation: move-forever4 6s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+@keyframes move-forever1 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+@keyframes move-forever2 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+@keyframes move-forever3 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+@keyframes move-forever4 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
 
 .iconos-sociales-footer svg{
   margin:0 5px;
