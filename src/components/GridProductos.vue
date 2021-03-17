@@ -1,26 +1,25 @@
 <template lang="html">
-  <div class="container-fluid">
+  <div class="container-fluid gridProd">
     <div class="row">
       <div class="col-2 col-md-1">
         <aside class="navbar">
           <div class="container menu-lateral">
             <transition name="slide-fade"><div class="popup" v-if="mostrar" ><p>Chollos más recientes</p></div>
             <div v-else></div></transition>
-            <svg @mouseover="mostrarPopup()" @mouseleave="ocultarPopup()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-clock-fill  menu-item" viewBox="0 0 16 16">
+            <svg @mouseover="mostrarPopup()" @mouseleave="ocultarPopup()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-clock-fill  menu-item" viewBox="0 0 16 16">
               <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
             </svg>
 
             <transition name="slide-fade"><div class="popup" v-if="mostrar" ><p>Lo más hypeado</p></div>
             <div v-else></div></transition>
-            <svg @mouseover="mostrarPopup()" @mouseleave="ocultarPopup()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-star-fill  menu-item" viewBox="0 0 16 16">
+            <svg @mouseover="mostrarPopup()" @mouseleave="ocultarPopup()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-star-fill  menu-item" viewBox="0 0 16 16">
               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
             </svg>
 
             <transition name="slide-fade"><div class="popup" v-if="mostrar" ><p>Subir chollo</p></div>
             <div v-else></div></transition>
-            <svg @mouseover="mostrarPopup()" @mouseleave="ocultarPopup()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-upload  menu-item" viewBox="0 0 16 16">
-              <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-              <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
+            <svg @mouseover="mostrarPopup()" @mouseleave="ocultarPopup()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-arrow-up-circle-fill  menu-item" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
             </svg>
 
           </div>
@@ -28,8 +27,8 @@
       </div>
       <div class="col-10 col-md-11">
         <div class="container-fluid">
-          <div v-for="n in n_filas" :key="n" class="row">
-            <div v-for="m in n_columnas" :key="m" class="col cell-grid">
+          <div v-for="n in n_filas" :key="n" class=" row">
+            <div v-for="m in n_columnas" :key="m" class="mx-auto cell-grid">
                 <h3>Titulo del producto</h3>
                 <p>{{n_productos[contarIndice(n,m)]}}</p>
             </div>
@@ -106,19 +105,21 @@ aside{
 
 .popup{
 position:absolute;
-background: orange;
+background: #FF9800;
 left:40px;
 border-radius:0px 10px 10px 0px;
 max-height: 40px;
 width: 200px;
+color:#212121;
 
 
 
 }
 .cell-grid{
-  background: #e0e0e0;
-  margin: 10px;
+  background: white;
+  margin: 5px;
   border-radius: 10px;
+  width: 18%;
 }
 
 .menu-lateral svg{
@@ -131,15 +132,23 @@ width: 200px;
   padding-right: 0px !important;
 }
 .menu-item{
-  padding: 2px;
+  padding: 5px;
   min-width: 40px;
-  background-color: orange;
+  background-color: #F57C00;
   margin-bottom: 5px;
   border-radius: 10px 0px 0px 10px;
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
 
+.gridProd{
+  background: #eeeeee  ;
+  padding-bottom: 15vw;
+  padding-top: 50px;
+
+}
+
+/*-------------------Efectos / transitions--------------*/
 .slide-fade-enter-active {
   transition: all 0.3s ease-out;
 }
@@ -153,11 +162,32 @@ width: 200px;
   transform: translateX(20px);
   opacity: 0;
 }
+/*-------------------Efectos transitions--------------*/
+
+
 /*------Medias query----------*/
 @media screen and (max-width: 400px) {
   .menu-lateral{
     padding:0;
   }
+  .cell-grid{
+    width: 70% !important;
+  }
 }
+
+@media screen and (max-width: 768px) {
+  .cell-grid{
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cell-grid{
+    max-width: 220px;
+    min-width: 150px;
+  }
+}
+
+
 
 </style>

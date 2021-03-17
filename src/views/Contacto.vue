@@ -26,16 +26,6 @@
 
         </div>
       </div>
-
-      <ul>
-        <li v-on:click="cambiar(1)">sdsadd</li>
-        <li v-on:click="cambiar(2)">fffff</li>
-        <li v-on:click="cambiar(14)">2122121</li>
-      </ul>
-
-      <p v-if="mostrar===1"> 1 </p>
-      <p v-else-if="mostrar===2"> 2 </p>
-      <HelloWorld msg="hola puto" v-else> 3 </HelloWorld>
     </div>
 
   </div>
@@ -43,18 +33,13 @@
 
 <script>
 
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Contacto',
-  components: {HelloWorld},
   data: () => ({
-    mostrar: 0,
   }),
   methods: {
-    cambiar: function (mostrar_arg){
-      this.mostrar = mostrar_arg;
-    }
+
   }
 }
 </script>

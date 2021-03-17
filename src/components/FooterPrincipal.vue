@@ -70,7 +70,7 @@
 <style lang="css" scoped>
 
 .imagen-footer{
-  width: 300px;
+  width: 75%;
   height: auto;
 }
 
