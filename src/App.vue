@@ -73,7 +73,7 @@ export default {
   },
   data: () => ({
     mostrar: 'vacio',
-    contador: 0,
+    contador: 1,
   }),
   methods: {
     cambiar: function (pestaña,cont){
@@ -113,7 +113,7 @@ export default {
 }
 
 .imagen-logotipo{
-  width: 200px;
+  width: 70%;
   height: auto;
 }
 

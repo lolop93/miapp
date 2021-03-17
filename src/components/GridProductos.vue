@@ -183,7 +183,7 @@ color:#212121;
 
 @media screen and (min-width: 768px) {
   .cell-grid{
-    max-width: 220px;
+    max-width: 280px;
     min-width: 150px;
   }
 }
