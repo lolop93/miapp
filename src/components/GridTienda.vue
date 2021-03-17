@@ -2,10 +2,9 @@
   <div class="container">
     <div class="row">
       <div class="grid">
-        <div v-for="m in n_tiendas" :key="m" class="cellGrid text-center ">
+        <div v-for="m in n_tiendas" :key="m" class="cellGrid text-center" :style="cambiarColores(m-1)">
 
-          <h3>JAjajsalu2</h3>
-          <img src="#" alt="">
+          <img src="../assets/imagenProductoPrueba.jpg" class="img-thumbnail" alt="...">
           <p>Texto de descripcion</p>
         </div>
 
@@ -19,9 +18,22 @@ export default {
   name: 'GridTienda',
   data: () => ({
     n_tiendas: 50,
+    colorines:["white","blue","orange","red","green","purple","pink","brown","yellow","grey"]
   }),
   methods: {
-
+    cambiarColores:function(index){
+      for (var i = 0; i <= index; i++) {
+        if(index > 9){
+          return {
+            "background-color": this.colorines[index%10],
+          };
+        }else{
+          return {
+            "background-color": this.colorines[index],
+          };
+        }
+      }
+    },
   },
 }
 </script>
@@ -36,5 +48,11 @@ export default {
   background: grey;
   margin: 5px;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .grid{
+    grid-template-columns: 50% 50%;
+  }
 }
 </style>
