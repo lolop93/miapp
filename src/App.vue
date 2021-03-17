@@ -20,7 +20,7 @@
       </div>
 
       <div class="col-lg-2 order-lg-3 order-2">
-        Aqui el Login :)
+        Aqui el Login puta :)
       </div>
 
     </div>
