@@ -20,7 +20,7 @@
       </div>
 
       <div class="col-lg-2 order-lg-3 order-2">
-        Aqui el Login puta :)
+        <router-link style="text-decoration: none;" to="/cuenta">Mi cuenta</router-link>
       </div>
 
     </div>

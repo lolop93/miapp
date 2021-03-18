@@ -18,7 +18,7 @@ export default {
   name: 'GridTienda',
   data: () => ({
     n_tiendas: 50,
-    colorines:["white","blue","orange","red","green","purple","pink","brown","yellow","grey"]
+    colorines:["#ff6d00","#ff9100","#ffab40","#f57c00","#fb8c00","#ff9800","#ffa726","#ffb74d","#ffcc80","#ffe0b2"]
   }),
   methods: {
     cambiarColores:function(index){
