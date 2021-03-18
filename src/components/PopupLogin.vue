@@ -2,6 +2,7 @@
 
   <button @click="estado = true" class="boton-login botlog">
     Abrete puto
+  </button>
     <div class="" style="position:relative">
       <div v-if="estado" class="modal-container">
         <div class="button-container">
@@ -15,7 +16,7 @@
         </div>
       </div>
     </div>
-  </button>
+
 
 
 
