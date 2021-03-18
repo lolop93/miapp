@@ -2,20 +2,21 @@
 
   <button @click="estado = true" class="boton-login botlog">
     Abrete puto
+
   </button>
-    <div class="" style="position:relative">
-      <div v-if="estado" class="modal-container">
-        <div class="button-container">
-          <hr>
-          <a href="#">Iniciar Sesión</a>
-          <hr>
-          <a href="#">Registrarse</a>
-          <hr>
-          <a @click="estado = false">Cerrar</a>
-          <hr>
-        </div>
+  <div class="container-relative" style="position:relative">
+    <div v-if="estado" class="modal-container">
+      <div class="button-container">
+        <hr>
+        <a href="#">Iniciar Sesión</a>
+        <hr>
+        <a href="#">Registrarse</a>
+        <hr>
+        <a @click="estado = false">Cerrar</a>
+        <hr>
       </div>
     </div>
+  </div>
 
 
 
@@ -76,6 +77,9 @@ export default {
 
 }
 
+.container-relative{
+    margin: auto 0;
+}
 
 .modal-container a{
   margin: 20px;
