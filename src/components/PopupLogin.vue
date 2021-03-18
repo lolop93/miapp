@@ -11,7 +11,7 @@
             <hr>
             <a href="#">Registrarse</a>
             <hr>
-            <a href="#" @click="estado = false">Cerrar</a>
+            <a @click="estado = false">Cerrar</a>
             <hr>
           </div>
         </div>
@@ -62,7 +62,10 @@ export default {
 }
 
 .modal-container {
-	position: relative;
+	position: absolute;
+  right: 0px;
+  left: 0px;
+  margin: auto 30%;
   z-index: 10;
   display:block;
 	background: orange;
@@ -72,24 +75,13 @@ export default {
 
 }
 
-.modal-container:after {
-  content: '';
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border: 19px solid transparent;
-	border-bottom-color: orange;
-	border-top: 0;
-	margin-left: -19px;
-	margin-top: -19px;
-}
 
 .modal-container a{
   margin: 20px;
   text-decoration: none;
   display: block;
+  cursor: pointer;
+
 }
 
 </style>
