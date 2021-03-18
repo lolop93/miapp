@@ -65,7 +65,7 @@ export default {
 
   },
   mounted: function(){
-    console.log("polla mounted");
+
   },
   methods: {
     mostrarPopup: function(){
@@ -82,7 +82,6 @@ export default {
         this.n_col_restantes = this.n_productos.length%this.n_columnas;
         this.n_filas++;
       }
-      console.log("polla");
     },
 
     contarIndice: function(fila,columna){
