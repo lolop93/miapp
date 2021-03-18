@@ -2,7 +2,6 @@
 
   <button @click="estado = true" class="boton-login botlog">
     Abrete puto
-    </button>
     <div class="" style="position:relative">
       <div v-if="estado" class="modal-container">
         <div class="button-container">
@@ -16,6 +15,8 @@
         </div>
       </div>
     </div>
+  </button>
+
 
 
 </template>
@@ -65,15 +66,12 @@ export default {
 
 .modal-container {
 	position: absolute;
-  right: 0px;
-  left: 0px;
-
   z-index: 10;
   display:block;
 	background: orange;
 	border-radius: .4em;
   margin-top: 15px;
-  
+
 
 }
 
