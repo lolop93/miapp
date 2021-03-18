@@ -21,6 +21,7 @@
 
       <div class="col-lg-2 order-lg-3 order-2">
         <router-link style="text-decoration: none;" to="/cuenta">Mi cuenta</router-link>
+        <PopupLogin/>
       </div>
 
     </div>
@@ -65,11 +66,12 @@
 <script>
 
 import FooterPrincipal from '@/components/FooterPrincipal.vue'
+import PopupLogin from '@/components/PopupLogin.vue'
 
 export default {
   name: 'App',
   components: {
-    FooterPrincipal,
+    FooterPrincipal, PopupLogin
   },
   data: () => ({
     mostrar: 'vacio',
