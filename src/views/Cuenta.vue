@@ -1,15 +1,15 @@
 <template lang="html">
   <div class="container">
     <div class="row elmts_opciones mx-auto">
-      <div v-for="opcion in opciones" :key="opcion" class="card text-center opcion align-items-center ">
+      <div v-on:click="verOpcion(opcion)" v-for="opcion in opciones" :key="opcion" class="card text-center opcion align-items-center ">
         <p class="align-items-center">{{opcion}}</p>
 
-        <svg v-if="opcion==='Cartera'" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="mx-auto bi bi-wallet2" viewBox="0 0 16 16">
-          <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
-        </svg>
-        <svg v-if="opcion==='Mi perfil'" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="mx-auto bi bi-person-circle" viewBox="0 0 16 16">
+        <svg v-if="opcion==='Mi perfil'"  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="mx-auto bi bi-person-circle" viewBox="0 0 16 16">
           <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
           <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </svg>
+        <svg v-if="opcion==='Cartera'" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="mx-auto bi bi-wallet2" viewBox="0 0 16 16">
+          <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
         </svg>
         <svg v-if="opcion==='Pedidos'" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill=" currentColor" class="mx-auto bi bi-mailbox" viewBox="0 0 16 16">
           <path d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"/>
@@ -30,7 +30,9 @@
       </div>
     </div>
     <div class="row  align-items-center">
-      <MiPerfil/>
+      <MiPerfil v-if="opcion==='Mi perfil'"/>
+      <Cartera v-if="opcion==='Cartera'"/>
+
     </div>
   </div>
 
@@ -40,14 +42,21 @@
 <script>
 
 import MiPerfil from '@/components/MiPerfil.vue'
+import Cartera from '@/components/Cartera.vue'
 
 export default {
   name: 'Cuenta',
   data: () => ({
     opciones:["Mi perfil","Cartera","Pedidos","Mis chollos","Ayuda","Cerrar Sesión"],
+    opcion: "Mi perfil",
   }),
   components:{
-    MiPerfil,
+    MiPerfil,Cartera
+  },
+  methods:{
+    verOpcion: function(opc){
+      this.opcion=opc;
+    }
   }
 
 }
