@@ -46,7 +46,8 @@ export default {
 <style lang="css" scoped>
 
 .containerpadre{
-  max-width: 200px;
+  max-width: 220px;
+  min-width: 165px
 }
 .boton-login{
   background-color: orange; /* Green */
@@ -78,7 +79,6 @@ export default {
   display:block;
 	background: orange;
 	border-radius: .4em;
-  margin-top: 15px;
   width: 100%;
 
 }
