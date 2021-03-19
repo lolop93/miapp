@@ -29,8 +29,8 @@
 
       </div>
     </div>
-    <div class="row">
-
+    <div class="row  align-items-center">
+      <MiPerfil/>
     </div>
   </div>
 
@@ -38,11 +38,18 @@
 </template>
 
 <script>
+
+import MiPerfil from '@/components/MiPerfil.vue'
+
 export default {
   name: 'Cuenta',
   data: () => ({
     opciones:["Mi perfil","Cartera","Pedidos","Mis chollos","Ayuda","Cerrar Sesión"],
   }),
+  components:{
+    MiPerfil,
+  }
+
 }
 </script>
 

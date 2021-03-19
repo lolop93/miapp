@@ -28,6 +28,25 @@
       </div>
     </div>
 
+    <div class="container">
+
+      <div class="row align-items-center">
+      </div>
+      <div class="card">
+        <div class="card-header">
+          Programador - FrontEnd
+        </div>
+        <div class="card-body">
+
+          <h5 class="card-title">Ivan. V</h5>
+          <p class="card-text">Trabajador asociado</p>
+
+
+
+        </div>
+      </div>
+    </div>
+
   </div>
 </template>
 
