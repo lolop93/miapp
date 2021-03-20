@@ -32,6 +32,8 @@
     <div class="row  align-items-center">
       <MiPerfil v-if="opcion==='Mi perfil'"/>
       <Cartera v-if="opcion==='Cartera'"/>
+      <Pedidos v-if="opcion==='Pedidos'"/>
+      <MisChollos v-if="opcion==='Mis chollos'"/>
 
     </div>
   </div>
@@ -43,6 +45,8 @@
 
 import MiPerfil from '@/components/MiPerfil.vue'
 import Cartera from '@/components/Cartera.vue'
+import Pedidos from '@/components/Pedidos.vue'
+import MisChollos from '@/components/MisChollos.vue'
 
 export default {
   name: 'Cuenta',
@@ -51,7 +55,7 @@ export default {
     opcion: "Mi perfil",
   }),
   components:{
-    MiPerfil,Cartera
+    MiPerfil,Cartera,Pedidos,MisChollos
   },
   methods:{
     verOpcion: function(opc){

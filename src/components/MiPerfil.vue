@@ -24,12 +24,7 @@
 
       </div>
       <div class="col tercera">
-        <div class="card opcionesPerfil">
-          <p>Perfil</p>
-        </div>
-        <div class="card opcionesPerfil">
-          <p>Mis direcciones</p>
-        </div>
+
         <div class="card opcionesPerfil">
           <p>Mis tarjetas</p>
         </div>
