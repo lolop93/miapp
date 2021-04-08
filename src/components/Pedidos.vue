@@ -58,32 +58,26 @@ export default {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-right: 10px;
-  text-align: end;
+
 }
 
 .columna66 img{
   display: flex;
-  float: left;
-  margin-left: 0px !important;
+
 }
 
 .opcionesPedido{
   border: 1px solid orange;
-  margin: 5px;
+  margin: 5px 0px;
 
 }
 
 .opcionesPedido span{
-
+  font-size: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-@media screen and (max-width: 768px) {
-  .contenedorInfo a{
-    float: left;
-    text-align: left;
-  }
-}
+
 
 </style>

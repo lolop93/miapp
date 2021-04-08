@@ -3,7 +3,7 @@
   <div class="container containerpadre">
 
       <button @click="estado = true" class="boton-login botlog">
-        Abrete puto
+        Abreme
 
       </button>
       <div class="" style="position:relative">

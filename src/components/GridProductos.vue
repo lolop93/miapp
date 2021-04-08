@@ -26,9 +26,9 @@
         </aside>
       </div>
       <div class="col-10 col-md-11">
-        <div class="container-fluid">
-          <div v-for="n in n_filas" :key="n" class=" row">
-            <div v-for="m in n_columnas" :key="m" class="mx-auto cell-grid">
+        <div class="container-fluid contenedor_grid">
+          <div v-for="n in n_filas" :key="n" class="row filas_grid">
+            <div v-for="m in n_columnas" :key="m" class="cell-grid">
                 <h3>Titulo del producto</h3>
                 <p>{{n_productos[contarIndice(n,m)]}}</p>
             </div>
@@ -110,10 +110,12 @@ border-radius:0px 10px 10px 0px;
 max-height: 40px;
 width: 200px;
 color:#212121;
-
-
-
 }
+
+.filas_grid{
+  justify-content: center;
+}
+
 .cell-grid{
   background: white;
   margin: 5px;
@@ -165,25 +167,40 @@ color:#212121;
 
 
 /*------Medias query----------*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 620px) {
   .menu-lateral{
     padding:0;
   }
   .cell-grid{
     width: 70% !important;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .cell-grid{
-    width: 45%;
+  .contenedor_grid{
+    padding:0 100px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1100px) and (min-width: 900px){
+  .cell-grid{
+
+  }
+  .contenedor_grid{
+    padding:0 100px;
+  }
+}
+
+
+@media screen and (max-width: 1100px) {
+  .cell-grid{
+    width: 34%;
+    min-width: 200px;
+  }
+
+}
+
+@media screen and (min-width: 1100px) {
   .cell-grid{
     max-width: 280px;
-    min-width: 150px;
+    min-width: 230px;
   }
 }
 
